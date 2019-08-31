@@ -61,6 +61,43 @@ h3 {
     text-align: center;
 }
 
+#projectsBody {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+
+.projectCard {
+    background-color: rgb(55, 38, 56, .2);
+    border: 2px solid rgb(47, 61, 90);
+    border-radius: 5px;
+    color: rgb(47, 61, 90);
+    display: inline-block;
+    margin: .5em;
+    padding: .5em;
+    text-align: center;
+    width: 300px;
+}
+
+.projectCard h4 {
+    color: rgb(4, 125, 129);
+    font-size: 1.25em;
+    margin-top: .75em;
+}
+
+.projectCard img {
+    border-radius: 5px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 100%;
+}
+
+.projectLinks {
+    display: flex;
+    justify-content: space-evenly;
+}
+
 .skillsList {
     list-style-type: circle;
 }

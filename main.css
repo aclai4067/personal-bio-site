@@ -1,3 +1,66 @@
-body{
+
+
+a {
+    color: rgb(55, 38, 56);
+    text-decoration: none;
+}
+
+a:visited {
+    color: rgb(128, 100, 100); 
+}
+
+a:hover {
+    font-size: 1.25em;
+}
+
+a:active {
+    color: rgba(79, 5, 83, 0.767); 
+    text-decoration: underline;
+}
+
+#bioPage p {
+    margin-left: auto;
+    margin-right: auto;
+    text-align: justify;
+    width: 90%;
+}
+
+body {
     background-color: lavenderblush;
+    color: rgb(55, 38, 56);
+    font-family: 'Abel', 'Gayathri', sans-serif;
+}
+
+.footerLinks {
+    display: flex;
+    justify-content: space-evenly;
+    
+}
+
+h3 {
+    margin-top: 2em;
+}
+
+#navLinks {
+    display: flex;
+    align-items: baseline;
+    justify-content: space-evenly;
+}
+
+#navLinks li {
+    display: inline-block;
+    
+}
+
+#navLinks ul {
+    list-style-type: none;
+}
+
+.page-footer h4 {
+    margin-top: 3em;
+    text-align: center;
+}
+
+.skillsList {
+    list-style-type: circle;
 }

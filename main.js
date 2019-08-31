@@ -8,7 +8,7 @@ const printToDom = (divId, textToPrint) => {
 const projects = [
     {
         title: "Cool Project 1", 
-        screenshot: "http://gotoflashgames.com/files/file/033.jpg", 
+        screenshot: "https://live.staticflickr.com/1/17367_521ff9c374.jpg", 
         description: "This is the best project", // A good project description includes 'the what', 'the why', and 'the how'.
         technologiesUsed: "HTML, CSS, Vanilla JavaScript, Version Control with Github",
         available: true,
@@ -17,7 +17,7 @@ const projects = [
       },
       {
         title: "Cool Project 2", 
-        screenshot: "http://gotoflashgames.com/files/file/033.jpg", 
+        screenshot: "https://live.staticflickr.com/1/17367_521ff9c374.jpg", 
         description: "This is the second best project", // A good project description includes 'the what', 'the why', and 'the how'.
         technologiesUsed: "HTML, CSS, Vanilla JavaScript, Version Control with Github",
         available: true,
@@ -26,7 +26,7 @@ const projects = [
       },
       {
         title: "Cool Project 3", 
-        screenshot: "http://gotoflashgames.com/files/file/033.jpg", 
+        screenshot: "https://live.staticflickr.com/1/17367_521ff9c374.jpg", 
         description: "This is the third best project", // A good project description includes 'the what', 'the why', and 'the how'.
         technologiesUsed: "HTML, CSS, Vanilla JavaScript, Version Control with Github",
         available: false,
@@ -35,7 +35,7 @@ const projects = [
       },
       {
         title: "Cool Project 4", 
-        screenshot: "http://gotoflashgames.com/files/file/033.jpg", 
+        screenshot: "https://live.staticflickr.com/1/17367_521ff9c374.jpg", 
         description: "This is the fourth best project", // A good project description includes 'the what', 'the why', and 'the how'.
         technologiesUsed: "HTML, CSS, Vanilla JavaScript, Version Control with Github",
         available: true,
@@ -55,7 +55,6 @@ const createProjectCards = (projectArr) => {
                     <img src=${projectObj.screenshot} alt="${projectObj.title} screenshot" />
                     <p>${projectObj.description}</p>
                     <p>${projectObj.technologiesUsed}</p>
-                    <p class="availability">${projectObj.available}</p>
                     <footer class="projectLinks">
                         <a href=${projectObj.url}>URL</a>
                         <a href=${projectObj.githubUrl}>GitHub Repo</a>

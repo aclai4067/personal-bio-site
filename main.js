@@ -67,3 +67,14 @@ const createProjectCards = (projectArr) => {
 };
 
 createProjectCards(projects);
+
+const eachNavLink = document.getElementById('navLinks').querySelectorAll('a')
+console.log(eachNavLink);
+
+for (let i = 0; i < eachNavLink.length; i++) {
+eachNavLink[i].addEventListener('click', (e) => {
+    const selectedLink = e.target.id;
+    console.log(selectedLink);
+}
+);
+};

@@ -70,11 +70,20 @@ createProjectCards(projects);
 
 const eachNavLink = document.getElementById('navLinks').querySelectorAll('a')
 console.log(eachNavLink);
+const bodyDivs = document.getElementsByClassName('fullPage');
+
+
 
 for (let i = 0; i < eachNavLink.length; i++) {
 eachNavLink[i].addEventListener('click', (e) => {
     const selectedLink = e.target.id;
     console.log(selectedLink);
+    // if (selectedLink === bodyDivs[i].classList[1]){
+    //     .style.display = "block";
+    // }
+    // if (selectedLink !== bodyDivs[i].classList[1]){
+    //     .style.display = "none";
+    // }
 }
 );
 };

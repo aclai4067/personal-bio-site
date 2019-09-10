@@ -67,3 +67,28 @@ const createProjectCards = (projectArr) => {
 };
 
 createProjectCards(projects);
+
+const eachNavLink = document.getElementById('navLinks').querySelectorAll('a')
+console.log(eachNavLink);
+const bodyDivs = document.getElementsByClassName('fullPage');
+
+const toggle = (e) => {
+    const selectedLink = e.target.id;
+    for (let i = 0; i < bodyDivs.length; i++) {
+        if (selectedLink === bodyDivs[i].classList[1]){
+            bodyDivs[i].style.display = "block";
+        }
+        if (selectedLink !== bodyDivs[i].classList[1]){
+            bodyDivs[i].style.display = "none";
+        }
+    };
+};
+
+for (let i = 0; i < eachNavLink.length; i++) {
+eachNavLink[i].addEventListener('click', (e) => {
+    const selectedLink = e.target.id;
+    console.log(selectedLink);
+    toggle(e);
+}
+);
+};

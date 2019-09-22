@@ -1,4 +1,6 @@
-console.log('This works!');
+
+const eachNavLink = document.getElementById('navLinks').querySelectorAll('a')
+const bodyDivs = document.getElementsByClassName('fullPage');
 
 const printToDom = (divId, textToPrint) => {
     const selectedDiv = document.getElementById(divId);
@@ -7,13 +9,13 @@ const printToDom = (divId, textToPrint) => {
 
 const projects = [
     {
-        title: "Cool Project 1", 
-        screenshot: "https://live.staticflickr.com/1/17367_521ff9c374.jpg", 
-        description: "This is the best project", // A good project description includes 'the what', 'the why', and 'the how'.
+        title: "Pardon Us Band Website", 
+        screenshot: "./projectScreenshots/pardon-us-groupwork.jpg", 
+        description: "This was a group project to create a website for the punk rock band, Pardon Us. I contributed the background image with parallox scrolling on all pages except home.  I also contributed the music page with a card printing function and animation to hide and display additional content.", // A good project description includes 'the what', 'the why', and 'the how'.
         technologiesUsed: "HTML, CSS, Vanilla JavaScript, Version Control with Github",
         available: true,
         url: "https://github.com/nss-evening-cohort-8/js-part-deux", // Towards the latter part of the class, you will learn how to host your projects and people will be able to view them live. Cool, right? Welp, until then, just use your GitHub link in this spot as well.
-        githubUrl: "https://github.com/nss-evening-cohort-8/js-part-deux"
+        githubUrl: "https://github.com/nss-evening-cohort-10/foundations-group-project-pardon-us"
       },
       {
         title: "Cool Project 2", 
@@ -66,29 +68,30 @@ const createProjectCards = (projectArr) => {
     printToDom('projectsBody', cardsToPrint);
 };
 
-createProjectCards(projects);
-
-const eachNavLink = document.getElementById('navLinks').querySelectorAll('a')
-console.log(eachNavLink);
-const bodyDivs = document.getElementsByClassName('fullPage');
-
 const toggle = (e) => {
     const selectedLink = e.target.id;
     for (let i = 0; i < bodyDivs.length; i++) {
-        if (selectedLink === bodyDivs[i].classList[1]){
+        if (selectedLink === 'homeDefault'){
             bodyDivs[i].style.display = "block";
-        }
-        if (selectedLink !== bodyDivs[i].classList[1]){
-            bodyDivs[i].style.display = "none";
+        } else{
+            if (selectedLink === bodyDivs[i].classList[1]){
+                bodyDivs[i].style.display = "block";
+            }
+            if (selectedLink !== bodyDivs[i].classList[1]){
+                bodyDivs[i].style.display = "none";
+            }
         }
     };
 };
 
-for (let i = 0; i < eachNavLink.length; i++) {
-eachNavLink[i].addEventListener('click', (e) => {
-    const selectedLink = e.target.id;
-    console.log(selectedLink);
-    toggle(e);
-}
-);
+
+
+const init = () => {
+    createProjectCards(projects);
+    for (let i = 0; i < eachNavLink.length; i++) {
+        eachNavLink[i].addEventListener('click', toggle);
+    };
+    document.getElementById('homeDefault').addEventListener('click', toggle);
 };
+
+init();

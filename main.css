@@ -31,10 +31,14 @@ body {
     font-family: 'Abel', 'Gayathri', sans-serif;
 }
 
-.footerLinks {
+.footerLinks{
     display: flex;
-    justify-content: space-evenly;
-    
+    font-size: 2em;
+    justify-content: space-evenly;   
+}
+
+i{
+    color: rgb(128, 100, 100);
 }
 
 h3 {

@@ -11,7 +11,7 @@
     "project2": {
       "title": "Cool Project 2", 
       "screenshot": "https://live.staticflickr.com/1/17367_521ff9c374.jpg", 
-      "description": "This is the second best project", 
+      "description": "This is the second best project. What?Why?How?", 
       "technologiesUsed": "HTML, CSS, Vanilla JavaScript, Version Control with Github",
       "available": true,
       "url": "https://github.com/nss-evening-cohort-8/js-part-deux",
@@ -20,7 +20,7 @@
     "project3": {
       "title": "Cool Project 3", 
       "screenshot": "https://live.staticflickr.com/1/17367_521ff9c374.jpg", 
-      "description": "This is the third best project", 
+      "description": "This is the third best project. What?Why?How?", 
       "technologiesUsed": "HTML, CSS, Vanilla JavaScript, Version Control with Github",
       "available": false,
       "url": "https://github.com/nss-evening-cohort-8/js-part-deux", 
@@ -29,7 +29,7 @@
     "project4": {
       "title": "Cool Project 4", 
       "screenshot": "https://live.staticflickr.com/1/17367_521ff9c374.jpg", 
-      "description": "This is the fourth best project", 
+      "description": "This is the fourth best project.  What?Why?How?", 
       "technologiesUsed": "HTML, CSS, Vanilla JavaScript, Version Control with Github",
       "available": true,
       "url": "https://github.com/nss-evening-cohort-8/js-part-deux", 

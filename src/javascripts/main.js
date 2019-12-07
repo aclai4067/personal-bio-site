@@ -2,8 +2,8 @@
 import 'bootstrap';
 import '@fortawesome/fontawesome-free/js/all';
 import '../styles/main.scss';
+import $ from 'jquery';
 
-const eachNavLink = document.getElementById('navLinks').querySelectorAll('a');
 const bodyDivs = document.getElementsByClassName('fullPage');
 
 const printToDom = (divId, textToPrint) => {
@@ -52,8 +52,7 @@ const projects = [
 
 const createProjectCards = (projectArr) => {
   let cardsToPrint = '';
-  for (let i = 0; i < projectArr.length; i += 1) {
-    const projectObj = projectArr[i];
+  projectArr.forEach((projectObj) => {
     if (projectObj.available) {
       cardsToPrint += `
         <div class="projectCard ${projectObj.available}">
@@ -68,12 +67,12 @@ const createProjectCards = (projectArr) => {
         </div>
       `;
     }
-  }
+  });
   printToDom('projectsBody', cardsToPrint);
 };
 
 const toggle = (e) => {
-  const selectedLink = e.target.id;
+  const selectedLink = $(e.target).attr('id');
   for (let i = 0; i < bodyDivs.length; i += 1) {
     if (selectedLink === 'homeDefault') {
       bodyDivs[i].style.display = 'block';
@@ -90,10 +89,7 @@ const toggle = (e) => {
 
 const init = () => {
   createProjectCards(projects);
-  for (let i = 0; i < eachNavLink.length; i += 1) {
-    eachNavLink[i].addEventListener('click', toggle);
-  }
-  document.getElementById('homeDefault').addEventListener('click', toggle);
+  $('body').on('click', '.navLinks', toggle);
 };
 
 init();

@@ -3,6 +3,8 @@ import 'bootstrap';
 import '@fortawesome/fontawesome-free/js/all';
 import '../styles/main.scss';
 import $ from 'jquery';
+import firebase from 'firebase';
+import apiKeys from './helpers/apiKeys.json';
 
 const bodyDivs = document.getElementsByClassName('fullPage');
 
@@ -74,20 +76,17 @@ const createProjectCards = (projectArr) => {
 const toggle = (e) => {
   const selectedLink = $(e.target).attr('id');
   for (let i = 0; i < bodyDivs.length; i += 1) {
-    if (selectedLink === 'homeDefault') {
+    if (selectedLink === bodyDivs[i].classList[1]) {
       bodyDivs[i].style.display = 'block';
-    } else {
-      if (selectedLink === bodyDivs[i].classList[1]) {
-        bodyDivs[i].style.display = 'block';
-      }
-      if (selectedLink !== bodyDivs[i].classList[1]) {
-        bodyDivs[i].style.display = 'none';
-      }
+    }
+    if (selectedLink !== bodyDivs[i].classList[1]) {
+      bodyDivs[i].style.display = 'none';
     }
   }
 };
 
 const init = () => {
+  firebase.initializeApp(apiKeys.firebaseConfig);
   createProjectCards(projects);
   $('body').on('click', '.navLinks', toggle);
 };

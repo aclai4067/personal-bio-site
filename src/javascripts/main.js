@@ -5,6 +5,7 @@ import '../styles/main.scss';
 import $ from 'jquery';
 import firebase from 'firebase';
 import apiKeys from './helpers/apiKeys.json';
+import projectData from './helpers/data/projectData';
 
 const bodyDivs = document.getElementsByClassName('fullPage');
 
@@ -52,12 +53,14 @@ const projects = [
   },
 ];
 
-const createProjectCards = (projectArr) => {
+const createProjectCards = () => {
   let cardsToPrint = '';
-  projectArr.forEach((projectObj) => {
-    if (projectObj.available) {
-      cardsToPrint += `
-        <div class="projectCard ${projectObj.available}">
+  projectData.getProjects().then((projectArr) => {
+    console.log(projectArr);
+    projectArr.forEach((projectObj) => {
+      if (projectObj.available) {
+        cardsToPrint += `
+          <div class="projectCard ${projectObj.available}">
           <header><h4> ${projectObj.title} </h4></header>
           <img src=${projectObj.screenshot} alt="${projectObj.title} screenshot" />
           <p>${projectObj.description}</p>
@@ -66,11 +69,12 @@ const createProjectCards = (projectArr) => {
             <a href=${projectObj.url}>URL</a>
             <a href=${projectObj.githubUrl}>GitHub Repo</a>
           </footer>
-        </div>
-      `;
-    }
-  });
-  printToDom('projectsBody', cardsToPrint);
+          </div>
+        `;
+      }
+    });
+    printToDom('projectsBody', cardsToPrint);
+  }).catch((err) => console.error(err));
 };
 
 const toggle = (e) => {

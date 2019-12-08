@@ -1,7 +1,7 @@
 {
   "project1": {
       "title": "Pardon Us Band Website", 
-      "screenshot": "./projectScreenshots/pardon-us-groupwork.jpg", 
+      "screenshot": "https://raw.githubusercontent.com/aclai4067/personal-bio-site/master/assets/projectScreenshots/pardon-us-groupwork.jpg", 
       "description": "This was a group project to create a website for the punk rock band, Pardon Us. I contributed the background image with parallox scrolling on all pages except home.  I also contributed the music page with a card printing function and animation to hide and display additional content.",
       "technologiesUsed": "HTML, CSS, Vanilla JavaScript, Version Control with Github",
       "available": true,

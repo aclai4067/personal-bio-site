@@ -12,6 +12,7 @@ const createProjectCards = () => {
             <div class="card-body">
                 <h4 class="card-title"> ${projectObj.title} </h4>
                 <p>${projectObj.description}</p>
+                <h6>Technologies:</h6>
                 <p>${projectObj.technologiesUsed}</p>
             </div>
             <footer class="card-footer projectLinks">

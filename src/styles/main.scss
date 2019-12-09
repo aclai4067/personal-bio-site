@@ -1,115 +1,117 @@
-@import "~bootstrap/scss/bootstrap";
+@import '~bootstrap/scss/bootstrap';
+@import './variables';
 
-a {
-    color: rgb(55, 38, 56);
-    text-decoration: none;
-}
+body {
+  background-color: lavenderblush;
+  color: $plum;
+  font-family: 'Abel', 'Gayathri', sans-serif;
 
-a:visited {
-    color: rgb(128, 100, 100); 
-}
+  #navLinks {
+    display: flex;
+    align-items: baseline;
+    justify-content: space-evenly;
+    list-style-type: none;
 
-a:hover {
-    font-size: 1.25em;
-}
+    li {
+        display: inline-block;
 
-a:active {
-    color: rgba(79, 5, 83, 0.767); 
-    text-decoration: underline;
-}
+      a{
+        &:visited {
+          color: $mutednavy; 
+        }
 
-#bioPage p {
+        &:hover{
+          color: $warmtaupe;
+        }
+      }   
+    }
+  }
+
+  #mainDiv {
+    margin-bottom: 4rem;
+  }
+
+  #bioPage p {
     margin-left: auto;
     margin-right: auto;
     text-align: justify;
     width: 90%;
-}
+  }
 
-body {
-    background-color: lavenderblush;
-    color: rgb(55, 38, 56);
-    font-family: 'Abel', 'Gayathri', sans-serif;
-}
+  a {
+    color: $plum;
+    text-decoration: none;
 
-.footerLinks{
-    display: flex;
-    font-size: 2em;
-    justify-content: space-evenly;   
-}
+    &:hover {
+        font-size: 1.1em;
+    }
 
-i{
-    color: rgb(128, 100, 100);
-}
+    &:active {
+        color: rgba(79, 5, 83, 0.767); 
+        text-decoration: underline;
+    }
+  }
 
-h3 {
+  h3 {
     margin-top: 2em;
-}
+  }
 
-#navLinks {
-    display: flex;
-    align-items: baseline;
-    justify-content: space-evenly;
-}
+  #technologiesPage{
+    display: none;
+  }    
 
-#navLinks li {
-    display: inline-block;
-    
-}
+  .skillsList {
+    & p {
+      font-size: 4em;
 
-#navLinks ul {
-    list-style-type: none;
-}
+      &:hover{
+        color: $warmtaupe;
+      }
+    }
+  }
 
-.page-footer h4 {
-    margin-top: 3em;
-    text-align: center;
-}
-
-#projectsBody {
+  #projectsBody {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-evenly;
-}
+  }
 
-.projectCard {
-    background-color: rgba(55, 38, 56, .2);
-    border: 2px solid rgb(47, 61, 90);
-    border-radius: 5px;
-    color: rgb(47, 61, 90);
-    display: inline-block;
-    margin: .5em;
-    padding: .5em;
-    text-align: center;
-    width: 300px;
-}
+  .projectCard {
+    background-color: $cardbackground;
+    border: 2px solid $mutednavy;
+    color: $mutednavy;
 
-.projectCard h4 {
-    color: rgb(4, 125, 129);
-    font-size: 1.25em;
-    margin-top: .75em;
-}
-
-.projectCard img {
-    border-radius: 5px;
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-    width: 100%;
-}
-
-.projectLinks {
+    & h4 {
+      color: $headerteal;
+    }
+  }
+    
+  .projectLinks {
     display: flex;
     justify-content: space-evenly;
-}
+  }
 
-#projectsPage{
+  #projectsPage{
     display: none;
-}
+  }
 
-#technologiesPage{
-    display: none;
-}
+  .footerLinks{
+    display: flex;
+    font-size: 2em;
+    justify-content: space-evenly;   
+  }
 
-.skillsList {
-    list-style-type: circle;
+  .page-footer {
+    background-color: $warmtaupe;
+
+    & h5 {
+      text-align: center;
+    }
+
+    a {
+      &:hover{
+        color: $warmwhite;
+      }
+    }
+  }
 }

@@ -14,45 +14,6 @@ const printToDom = (divId, textToPrint) => {
   selectedDiv.innerHTML = textToPrint;
 };
 
-const projects = [
-  {
-    title: 'Pardon Us Band Website',
-    screenshot: '../assets/projectScreenshots/pardon-us-groupwork.jpg',
-    description: 'This was a group project to create a website for the punk rock band, Pardon Us. I contributed the background image with parallox scrolling on all pages except home.  I also contributed the music page with a card printing function and animation to hide and display additional content.', // A good project description includes 'the what', 'the why', and 'the how'.
-    technologiesUsed: 'HTML, CSS, Vanilla JavaScript, Version Control with Github',
-    available: true,
-    url: 'https://github.com/nss-evening-cohort-8/js-part-deux', // Towards the latter part of the class, you will learn how to host your projects and people will be able to view them live. Cool, right? Welp, until then, just use your GitHub link in this spot as well.
-    githubUrl: 'https://github.com/nss-evening-cohort-10/foundations-group-project-pardon-us',
-  },
-  {
-    title: 'Cool Project 2',
-    screenshot: 'https://live.staticflickr.com/1/17367_521ff9c374.jpg',
-    description: 'This is the second best project', // A good project description includes 'the what', 'the why', and 'the how'.
-    technologiesUsed: 'HTML, CSS, Vanilla JavaScript, Version Control with Github',
-    available: true,
-    url: 'https://github.com/nss-evening-cohort-8/js-part-deux', // Towards the latter part of the class, you will learn how to host your projects and people will be able to view them live. Cool, right? Welp, until then, just use your GitHub link in this spot as well.
-    githubUrl: 'https://github.com/nss-evening-cohort-8/js-part-deux',
-  },
-  {
-    title: 'Cool Project 3',
-    screenshot: 'https://live.staticflickr.com/1/17367_521ff9c374.jpg',
-    description: 'This is the third best project', // A good project description includes 'the what', 'the why', and 'the how'.
-    technologiesUsed: 'HTML, CSS, Vanilla JavaScript, Version Control with Github',
-    available: true,
-    url: 'https://github.com/nss-evening-cohort-8/js-part-deux', // Towards the latter part of the class, you will learn how to host your projects and people will be able to view them live. Cool, right? Welp, until then, just use your GitHub link in this spot as well.
-    githubUrl: 'https://github.com/nss-evening-cohort-8/js-part-deux',
-  },
-  {
-    title: 'Cool Project 4',
-    screenshot: 'https://live.staticflickr.com/1/17367_521ff9c374.jpg',
-    description: 'This is the fourth best project', // A good project description includes 'the what', 'the why', and 'the how'.
-    technologiesUsed: 'HTML, CSS, Vanilla JavaScript, Version Control with Github',
-    available: true,
-    url: 'https://github.com/nss-evening-cohort-8/js-part-deux', // Towards the latter part of the class, you will learn how to host your projects and people will be able to view them live. Cool, right? Welp, until then, just use your GitHub link in this spot as well.
-    githubUrl: 'https://github.com/nss-evening-cohort-8/js-part-deux',
-  },
-];
-
 const createProjectCards = () => {
   let cardsToPrint = '';
   projectData.getProjects().then((projectArr) => {
@@ -60,15 +21,17 @@ const createProjectCards = () => {
     projectArr.forEach((projectObj) => {
       if (projectObj.available) {
         cardsToPrint += `
-          <div class="projectCard ${projectObj.available}">
-          <header><h4> ${projectObj.title} </h4></header>
-          <img src=${projectObj.screenshot} alt="${projectObj.title} screenshot" />
-          <p>${projectObj.description}</p>
-          <p>${projectObj.technologiesUsed}</p>
-          <footer class="projectLinks">
-            <a href=${projectObj.url}>URL</a>
-            <a href=${projectObj.githubUrl}>GitHub Repo</a>
-          </footer>
+          <div class="card col-sm-5 m-sm-4 m-1 p-0 projectCard ${projectObj.available}">
+            <img class="card-img-top p-2" src=${projectObj.screenshot} alt="${projectObj.title} screenshot" />
+            <div class="card-body">
+                <h4 class="card-title"> ${projectObj.title} </h4>
+                <p>${projectObj.description}</p>
+                <p>${projectObj.technologiesUsed}</p>
+            </div>
+            <footer class="card-footer projectLinks">
+                <a href=${projectObj.url}>URL</a>
+                <a href=${projectObj.githubUrl}>GitHub Repo</a>
+            </footer>
           </div>
         `;
       }
@@ -91,7 +54,7 @@ const toggle = (e) => {
 
 const init = () => {
   firebase.initializeApp(apiKeys.firebaseConfig);
-  createProjectCards(projects);
+  createProjectCards();
   $('body').on('click', '.navLinks', toggle);
 };
 

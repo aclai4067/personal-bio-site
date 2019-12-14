@@ -2,13 +2,16 @@
 
 ## Description
 
- Use this application to present my bio summary, learned technologies, and completeted projects. Information is presented as a single page application, navigable by links at the top of the page. 
+ Use this application to present my biographical summary, learned technologies, and completeted projects. Information is presented as a single page application, navigable by links at the top of the page. 
 
 ## ScreenShots
-![personal site bio](https://raw.githubusercontent.com/aclai4067/personal-bio-site/master/screenshots/personal-bio-site-bio.png)
-![personal site technologies](https://raw.githubusercontent.com/aclai4067/personal-bio-site/master/screenshots/personal-bio-site-technologies.png)
-![personal site projects](https://raw.githubusercontent.com/aclai4067/personal-bio-site/master/screenshots/personal-bio-site-project-cards.png)
+![personal site bio](https://raw.githubusercontent.com/aclai4067/personal-bio-site/master/assets/screenshots/personal-bio-site-bio.png)
+![personal site technologies](https://raw.githubusercontent.com/aclai4067/personal-bio-site/master/assets/screenshots/personal-bio-site-technologies.png)
+![personal site projects](https://raw.githubusercontent.com/aclai4067/personal-bio-site/master/assets/screenshots/personal-bio-site-project-cards.png)
 
+
+## Demo
+[Preview the app here!](https://personal-site-a4c8c.firebaseapp.com/)
 
 ## How to run
 * Clone down this project from [GitHub](https://github.com/aclai4067/personal-bio-site)

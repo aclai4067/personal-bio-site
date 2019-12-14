@@ -10,17 +10,27 @@
 
 <body>
     <header>
-        <h1 id="homeDefault">Ashley Claiborne's Personal Site</h1>
+        <nav class="myNav navbar navbar-expand-sm navbar-dark bg-dark bd-navbar p-0">
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul id="navLinks" class="d-flex justify-content-around">
+                    <li><a href=#coverPage class="navLinks" id="navToHome">Home</a></li>
+                    <li><a href=#bioPage class="navLinks" id="navToBio">Bio</a></li>
+                    <li><a href=#projectsPage class="navLinks" id="navToProjects">Projects</a></li>
+                    <li><a href=#technologiesPage class="navLinks" id="navToTechnologies">Technologies</a></li>
+                    <li><a href=#contactPage class="navLinks" id="navToContact">Contact</a></li>
+                </ul>
+            </div>
+        </nav>
     </header>
-    <nav>
-        <ul id="navLinks">
-            <li><a href=#bioPage class="navLinks" id="navToBio">Bio</a></li>
-            <li><a href=#technologiesPage class="navLinks" id="navToTechnologies">Technologies</a></li>
-            <li><a href=#projectsPage class="navLinks" id="navToProjects">Projects</a></li>
-        </ul>
-    </nav>
+
 
     <div id="mainDiv" class="pb-4">
+        <div id="homeDefault" class="fullPage">
+            <h1>Ashley Claiborne's Personal Site</h1>
+        </div>
         <div class="fullPage navToBio" id="bioPage">
             <h3>Career Bio</h3>
             <p>
@@ -46,36 +56,37 @@
                 And I see virtually endless opportunity for continuous education and growth in thie field.
             </p>
         </div>
-        <div class="fullPage navToTechnologies" id="technologiesPage">
-            <h3>Skills and Technologies</h3>
-            <div class="row d-flex flex-wrap justify-content-around skillsList">
-                <p class="col-sm-1 col-4"><i class="fab fa-html5"></i></p>
-                <p class="col-sm-1 col-4"><i class="fab fa-css3-alt"></i></p>
-                <p class="col-sm-1 col-4"><i class="fab fa-js-square"></i></p>
-                <p class="col-sm-1 col-4"><i class="fab fa-github-square"></i></p>
-                <p class="col-sm-1 col-4"><i class="fab fa-sass"></i></p>
-                <p class="col-sm-1 col-4"><i class="fab fa-bootstrap"></i></p>
-                <p class="col-sm-1 col-4"><i class="fab fa-git-alt"></i></p>
-                <p class="col-sm-1 col-4"><i class="fab fa-npm"></i></p>
-            </div>
-        </div>
         <div class="fullPage navToProjects" id="projectsPage">
             <h3>Projects</h3>
             <div id="projectsBody" class="row d-flex flex-wrap justify-content-around">
 
             </div>
-
+        </div>
+        <div class="fullPage navToTechnologies" id="technologiesPage">
+                <h3>Skills and Technologies</h3>
+                <div class="d-flex flex-wrap text-center skillsList">
+                    <p class="col-sm-3 col-4 mt-5 text-center"><i class="fab fa-html5"></i></p>
+                    <p class="col-sm-3 col-4 mt-5"><i class="fab fa-css3-alt"></i></p>
+                    <p class="col-sm-3 col-4 mt-5"><i class="fab fa-js-square"></i></p>
+                    <p class="col-sm-3 col-4 mt-5"><i class="fab fa-github-square"></i></p>
+                    <p class="col-sm-3 col-4 mt-5"><i class="fab fa-sass"></i></p>
+                    <p class="col-sm-3 col-4 mt-5"><i class="fab fa-bootstrap"></i></p>
+                    <p class="col-sm-3 col-4 mt-5"><i class="fab fa-git-alt"></i></p>
+                    <p class="col-sm-3 col-4 mt-5"><i class="fab fa-npm"></i></p>
+                </div>
+            </div>
+        <div class="fullPage" id="contactPage">
+            <h5>Contact</h5>
+            <div class="footerLinks">
+                <a href="mailto:languageisaliquid@gmail.com" title="email Ashley"><i class="far fa-paper-plane"></i></i></a>
+                <a href="https://www.linkedin.com/in/ashley-claiborne-a14b2219" title="linkedin"><i class="fab fa-linkedin-in"></i></a>
+                <a href="https://github.com/aclai4067" title="github"><i class="fab fa-github"></i></a>
+            </div>
         </div>
     </div>
 
     <footer class="page-footer fixed-bottom">
-        <h5>Contact</h5>
-        <div class="footerLinks">
-            <a href="mailto:languageisaliquid@gmail.com" title="email Ashley"><i class="far fa-paper-plane"></i></i></a>
-            <a href="https://www.linkedin.com/in/ashley-claiborne-a14b2219" title="linkedin"><i class="fab fa-linkedin-in"></i></a>
-            <a href="https://github.com/aclai4067" title="github"><i class="fab fa-github"></i></a>
-            <a href="https://codepen.io/aclai4067" title="codepen"><i class="fab fa-codepen"></i></a>
-        </div>
+        <p>copyright or something</p>
     </footer>
 </body>
 </html>

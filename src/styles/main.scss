@@ -2,41 +2,68 @@
 @import './variables';
 
 body {
-  background-color: lavenderblush;
+  background: radial-gradient(transparent, #EAC1C1) no-repeat center center fixed,
+    $plum url("https://images.unsplash.com/photo-1563225409-127c18758bd5?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1534&q=80") no-repeat center center fixed;
+  background-size: cover;
+  height: 100%;
+  margin: 0;
+  padding: 0;
   color: $plum;
   font-family: 'Abel', 'Gayathri', sans-serif;
 
-  #navLinks {
-    display: flex;
-    align-items: baseline;
-    justify-content: space-evenly;
-    list-style-type: none;
+  .myNav {
+    background-color: $plum!important;
 
-    li {
-        display: inline-block;
+    #navLinks {
+        width: 90%;
+        // display: flex;
+        // align-items: baseline;
+        // justify-content: space-evenly;
+        // list-style-type: none;
 
-      a{
-        &:visited {
-          color: $mutednavy; 
+        li {
+            display: inline-block;
+
+            a{
+                color: $warmwhite!important;
+
+                // &:visited {
+                // color: $mutednavy; 
+                // }
+
+                &:hover{
+                color: $warmtaupe!important;
+                text-decoration: none!important;
+                }
+            }   
         }
-
-        &:hover{
-          color: $warmtaupe;
-        }
-      }   
     }
   }
+
+  & .fullPage{
+    min-height: 100vh;
+}
 
   #mainDiv {
     margin-bottom: 4rem;
   }
 
-  #bioPage p {
+  #bioPage, #technologiesPage {
+  background: radial-gradient(transparent, $plum) no-repeat center center fixed,
+    $plum url("https://images.unsplash.com/photo-1447703693928-9cd89c8d3ac5?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=751&q=80") no-repeat center center fixed;
+  background-size: cover;
+  color: $warmwhite;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+
+   & p {
     margin-left: auto;
     margin-right: auto;
     text-align: justify;
     width: 90%;
   }
+}
 
   a {
     color: $plum;
@@ -56,9 +83,11 @@ body {
     margin-top: 2em;
   }
 
-  #technologiesPage{
-    display: none;
-  }    
+//   #technologiesPage{
+//     background-color: $plum;
+//     color: $warmwhite;
+
+//   }    
 
   .skillsList {
     & p {
@@ -92,7 +121,7 @@ body {
   }
 
   #projectsPage{
-    display: none;
+    // display: none;
   }
 
   .footerLinks{

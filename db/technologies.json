@@ -38,5 +38,9 @@
   "tech10": {
     "name": "firebase",
     "iconUrl": ""
+  },
+  "tech11": {
+    "name": "react",
+    "iconUrl": ""
   }
 }

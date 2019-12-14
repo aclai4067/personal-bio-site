@@ -1,5 +1,6 @@
 @import '~bootstrap/scss/bootstrap';
 @import './variables';
+@import '~devicon/devicon.min.css';
 
 body {
   background: radial-gradient(transparent, #EAC1C1) no-repeat center center fixed,
@@ -11,117 +12,101 @@ body {
   color: $plum;
   font-family: 'Abel', 'Gayathri', sans-serif;
 
-  .myNav {
-    background-color: $plum!important;
 
-    #navLinks {
-        width: 90%;
-        // display: flex;
-        // align-items: baseline;
-        // justify-content: space-evenly;
-        // list-style-type: none;
+    .myNav {
+        background-color: $plum!important;
+        position: fixed;
+        right: 0;
+        top: 0;
+        left: 0;
+        z-index: 1030;
 
-        li {
-            display: inline-block;
+        #navLinks {
+            width: 90%;
 
-            a{
-                color: $warmwhite!important;
+            li {
+                display: inline-block;
 
-                // &:visited {
-                // color: $mutednavy; 
-                // }
+                a{
+                    color: $warmwhite!important;
 
-                &:hover{
-                color: $warmtaupe!important;
-                text-decoration: none!important;
-                }
-            }   
+                    &:hover{
+                    color: $warmtaupe!important;
+                    text-decoration: none!important;
+                    }
+                }   
+            }
         }
     }
-  }
 
-  & .fullPage{
-    min-height: 100vh;
-}
-
-  #mainDiv {
-    margin-bottom: 4rem;
-  }
-
-  #bioPage, #technologiesPage {
-  background: radial-gradient(transparent, $plum) no-repeat center center fixed,
-    $plum url("https://images.unsplash.com/photo-1447703693928-9cd89c8d3ac5?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=751&q=80") no-repeat center center fixed;
-  background-size: cover;
-  color: $warmwhite;
-  height: 100%;
-  margin: 0;
-  padding: 0;
-
-   & p {
-    margin-left: auto;
-    margin-right: auto;
-    text-align: justify;
-    width: 90%;
-  }
-}
-
-  a {
-    color: $plum;
-    text-decoration: none;
-
-    &:hover {
-        font-size: 1.1em;
+    #mainDiv {    
+    & .fullPage{
+        padding-top: 2.3rem;
+        min-height: 100vh;
     }
 
-    &:active {
-        color: rgba(79, 5, 83, 0.767); 
-        text-decoration: underline;
-    }
-  }
+    #bioPage, #technologiesPage {
+    background: radial-gradient(transparent, $plum) no-repeat center center fixed,
+        $plum url("https://images.unsplash.com/photo-1447703693928-9cd89c8d3ac5?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=751&q=80") no-repeat center center fixed;
+    background-size: cover;
+    color: $warmwhite;
+    height: 100%;
+    margin: 0;
+    padding: 2.3rem 0 0 0;
 
-  h3 {
-    margin-top: 2em;
-  }
-
-//   #technologiesPage{
-//     background-color: $plum;
-//     color: $warmwhite;
-
-//   }    
-
-  .skillsList {
     & p {
-      font-size: 4em;
-
-      &:hover{
-        color: $warmtaupe;
-      }
+        margin-left: auto;
+        margin-right: auto;
+        text-align: justify;
+        width: 90%;
     }
-  }
-
-  #projectsBody {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-evenly;
-  }
-
-  .projectCard {
-    background-color: $cardbackground;
-    border: 2px solid $mutednavy;
-    color: $mutednavy;
-
-    & h4 {
-      color: $headerteal;
     }
-  }
-    
-  .projectLinks {
-    display: flex;
-    justify-content: space-evenly;
-  }
 
-  #projectsPage{
-    // display: none;
+    a {
+        color: $plum;
+        text-decoration: none;
+
+        &:hover {
+            font-size: 1.1em;
+        }
+
+        &:active {
+            color: rgba(79, 5, 83, 0.767); 
+            text-decoration: underline;
+        }
+    }
+
+    .skillsList {
+        & p {
+        font-size: 4em;
+
+        &:hover{
+            color: $warmtaupe;
+        }
+        }
+    }
+
+    #projectsBody {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+    }
+
+    .projectCard {
+        background-color: $cardbackground;
+        border: 2px solid $mutednavy;
+        color: $mutednavy;
+
+        & h4 {
+        color: $headerteal;
+        }
+    }
+        
+    .projectLinks {
+        display: flex;
+        justify-content: space-evenly;
+    }
+
   }
 
   .footerLinks{

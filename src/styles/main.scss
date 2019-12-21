@@ -3,18 +3,18 @@
 @import '~devicon/devicon.min.css';
 
 body {
-  background: radial-gradient(transparent, #EAC1C1) no-repeat center center fixed,
-    $plum url("https://images.unsplash.com/photo-1563225409-127c18758bd5?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1534&q=80") no-repeat center center fixed;
+  background: radial-gradient(transparent, $pardonPink) no-repeat center center fixed,
+    $warmtaupe url("https://images.unsplash.com/photo-1563225409-127c18758bd5?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1534&q=80") no-repeat center center fixed;
   background-size: cover;
   height: 100%;
   margin: 0;
   padding: 0;
-  color: $plum;
+  color: $warmtaupe;
   font-family: 'Abel', 'Gayathri', sans-serif;
 
 
     .myNav {
-        background-color: $plum!important;
+        background-color: $warmtaupe!important;
         position: fixed;
         right: 0;
         top: 0;
@@ -31,7 +31,7 @@ body {
                     color: $warmwhite!important;
 
                     &:hover{
-                    color: $warmtaupe!important;
+                    color: $darkmauve!important;
                     text-decoration: none!important;
                     }
                 }   
@@ -46,8 +46,8 @@ body {
     }
 
     #bioPage, #technologiesPage {
-    background: radial-gradient(transparent, $plum) no-repeat center center fixed,
-        $plum url("https://images.unsplash.com/photo-1447703693928-9cd89c8d3ac5?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=751&q=80") no-repeat center center fixed;
+    background: radial-gradient(transparent, $warmtaupe) no-repeat center center fixed,
+        $warmtaupe url("https://images.unsplash.com/photo-1447703693928-9cd89c8d3ac5?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=751&q=80") no-repeat center center fixed;
     background-size: cover;
     color: $warmwhite;
     height: 100%;
@@ -63,7 +63,7 @@ body {
     }
 
     a {
-        color: $plum;
+        color: $warmtaupe;
         text-decoration: none;
 
         &:hover {
@@ -81,7 +81,7 @@ body {
         font-size: 4em;
 
         &:hover{
-            color: $warmtaupe;
+            color: $darkmauve;
         }
         }
     }

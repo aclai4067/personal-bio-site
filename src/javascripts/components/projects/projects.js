@@ -1,3 +1,4 @@
+import $ from 'jquery';
 import utilities from '../../helpers/utilities';
 import projectData from '../../helpers/data/projectData';
 
@@ -7,23 +8,26 @@ const createProjectCards = () => {
     projectArr.forEach((projectObj) => {
       if (projectObj.available) {
         cardsToPrint += `
-          <div class="card col-sm-5 m-sm-4 m-1 p-0 projectCard ${projectObj.available}">
-            <img class="card-img-top p-2" src=${projectObj.screenshot} alt="${projectObj.title} screenshot" />
-            <div class="card-body">
-                <h4 class="card-title"> ${projectObj.title} </h4>
-                <p>${projectObj.description}</p>
-                <h6>Technologies:</h6>
-                <p>${projectObj.technologiesUsed}</p>
+          <div class="row d-flex flex-wrap mb-4 p-4 projectCard ${projectObj.available}">
+            <div class="projectImage col-4">
+              <img class="card-img" src=${projectObj.screenshot} alt="${projectObj.title} screenshot" />
             </div>
-            <footer class="card-footer projectLinks">
+            <div class="projectDetails col-8">
+              <h4 class="card-title"> ${projectObj.title} </h4>
+              <p>${projectObj.description}</p>
+              <h6>Technologies:</h6>
+              <p>${projectObj.technologiesUsed}</p>
+              <footer class="card-footer projectLinks">
                 <a href=${projectObj.url}>URL</a>
                 <a href=${projectObj.githubUrl}>GitHub Repo</a>
-            </footer>
+              </footer>
+            </div>
           </div>
         `;
       }
     });
     utilities.printToDom('projectsBody', cardsToPrint);
+    $('.projectCard:odd').addClass('flex-row-reverse');
   }).catch((err) => console.error(err));
 };
 

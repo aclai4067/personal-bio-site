@@ -62,6 +62,21 @@ body {
         .descriptor {
           font-size: 2em;
         }
+
+        .moreBtn {
+            color: $deepmutedteal;
+            border: 2px solid $deepmutedteal;
+            border-radius: 15px;
+            background-color: transparent;
+            font-size: 1.5em;
+            width: 10em;
+
+            &:hover {
+                background-color: $deepmutedteal;
+                color: $warmwhite;
+                border-color: $warmwhite;
+            }
+        }
     }
 
     #bioPage, #technologiesPage {
@@ -83,7 +98,7 @@ body {
 
         #aboutText {
             font-size: 1.4em;
-            
+
             & p {
                 text-align: justify;
                 margin: 1em;
@@ -128,12 +143,22 @@ body {
     }
 
     .projectCard {
-        background-color: $cardbackground;
-        border: 2px solid $mutednavy;
         color: $mutednavy;
 
+        .projectImage{
+            border-radius: 5px;
+        }
+
+        .projectDetails{
+            & p{
+                text-align: justify;
+                margin: 1em;
+                width: 95%;
+            }
+        }
+
         & h4 {
-        color: $headerteal;
+        color: $deepmutedteal;
         }
     }
         

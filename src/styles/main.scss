@@ -3,7 +3,7 @@
 @import '~devicon/devicon.min.css';
 
 body {
-  background: radial-gradient(transparent, $pardonPink) no-repeat center center fixed,
+  background: radial-gradient($transparentwarmwhite, $pardonPink) no-repeat center center fixed,
     $warmtaupe url("https://images.unsplash.com/photo-1563225409-127c18758bd5?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1534&q=80") no-repeat center center fixed;
   background-size: cover;
   height: 100%;
@@ -45,6 +45,25 @@ body {
         min-height: 100vh;
     }
 
+    #homeDefault {
+        .greeting {
+            color: $deepmutedteal;
+            text-shadow: 0 1px 0 rgba(36, 35, 35, 0.705);
+            font-family: 'Handlee', 'KoHo';
+            font-size: 5rem;
+            font-weight: bold;
+            margin-top: 20vh;
+        }
+
+        .fa-sun {
+          margin: .5em 2em;
+        }
+
+        .descriptor {
+          font-size: 2em;
+        }
+    }
+
     #bioPage, #technologiesPage {
     background: radial-gradient(transparent, $warmtaupe) no-repeat center center fixed,
         $warmtaupe url("https://images.unsplash.com/photo-1447703693928-9cd89c8d3ac5?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=751&q=80") no-repeat center center fixed;
@@ -54,12 +73,28 @@ body {
     margin: 0;
     padding: 2.3rem 0 0 0;
 
-    & p {
-        margin-left: auto;
-        margin-right: auto;
-        text-align: justify;
-        width: 90%;
-    }
+        #headshot {
+            border: 5px solid $deepmutedteal;
+            border-radius: 15px;
+            float: left;
+            margin: 1em;
+            max-width: 400px;
+        }
+
+        #aboutText {
+            font-size: 1.4em;
+            
+            & p {
+                text-align: justify;
+                margin: 1em;
+                width: 95%;
+            }
+        }
+
+        .clearfix{
+            overflow: auto;
+            clear: both;
+        }
     }
 
     a {
@@ -117,6 +152,7 @@ body {
 
   .page-footer {
     background-color: $warmtaupe;
+    color: $warmwhite;
 
     & h5 {
       text-align: center;

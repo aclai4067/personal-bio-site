@@ -1,108 +1,219 @@
 @import '~bootstrap/scss/bootstrap';
 @import './variables';
+@import '~devicon/devicon.min.css';
 
 body {
-  background-color: lavenderblush;
-  color: $plum;
+  background: radial-gradient($transparentwarmwhite, $pardonPink) no-repeat center center fixed,
+    $warmtaupe url("https://images.unsplash.com/photo-1563225409-127c18758bd5?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1534&q=80") no-repeat center center fixed;
+  background-size: cover;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  color: $warmtaupe;
   font-family: 'Abel', 'Gayathri', sans-serif;
 
-  #navLinks {
-    display: flex;
-    align-items: baseline;
-    justify-content: space-evenly;
-    list-style-type: none;
 
-    li {
-        display: inline-block;
+    .myNav {
+        background-color: $warmtaupe!important;
+        position: fixed;
+        right: 0;
+        top: 0;
+        left: 0;
+        z-index: 1030;
 
-      a{
-        &:visited {
-          color: $mutednavy; 
+        #navLinks {
+            width: 90%;
+
+            li {
+                display: inline-block;
+
+                a{
+                    color: $warmwhite!important;
+                    text-decoration: none;
+
+                    &:hover{
+                        font-size: 1.1em;
+                        color: $darkmauve!important;
+                        text-decoration: none!important;
+                    }
+
+                    &:active {
+                        text-decoration: underline;
+                    }
+                }   
+            }
         }
+    }
+
+    #mainDiv {    
+    & .fullPage{
+        padding-top: 2.3rem;
+        min-height: 100vh;
+    }
+
+    #homeDefault {
+        .greeting {
+            color: $deepmutedteal;
+            text-shadow: 0 1px 0 rgba(36, 35, 35, 0.705);
+            font-family: 'Handlee', 'KoHo';
+            font-size: 5rem;
+            font-weight: bold;
+            margin-top: 20vh;
+        }
+
+        .fa-sun {
+          margin: .5em 2em;
+        }
+
+        .descriptor {
+          font-size: 2em;
+        }
+
+        .moreBtn {
+            color: $deepmutedteal;
+            border: 2px solid $deepmutedteal;
+            border-radius: 15px;
+            background-color: transparent;
+            font-size: 1.5em;
+            width: 10em;
+
+            &:hover {
+                background-color: $deepmutedteal;
+                color: $warmwhite;
+                border-color: $warmwhite;
+            }
+        }
+    }
+
+    #bioPage, #technologiesPage {
+    background: radial-gradient(transparent, $warmtaupe) no-repeat center center fixed,
+        $warmtaupe url("https://images.unsplash.com/photo-1447703693928-9cd89c8d3ac5?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=751&q=80") no-repeat center center fixed;
+    background-size: cover;
+    color: $warmwhite;
+    height: 100%;
+    margin: 0;
+    padding: 2.3rem 0 0 0;
+
+        #headshot {
+            border: 5px solid $deepmutedteal;
+            border-radius: 15px;
+            float: left;
+            margin: 1em;
+            max-width: 400px;
+        }
+
+        #aboutText {
+            font-size: 1.4em;
+
+            & p {
+                text-align: justify;
+                margin: 1em;
+                width: 95%;
+            }
+        }
+
+        .clearfix{
+            overflow: auto;
+            clear: both;
+        }
+    }
+
+    .skillsList {
+        & p {
+        font-size: 4em;
 
         &:hover{
-          color: $warmtaupe;
+            color: $darkmauve;
         }
-      }   
-    }
-  }
-
-  #mainDiv {
-    margin-bottom: 4rem;
-  }
-
-  #bioPage p {
-    margin-left: auto;
-    margin-right: auto;
-    text-align: justify;
-    width: 90%;
-  }
-
-  a {
-    color: $plum;
-    text-decoration: none;
-
-    &:hover {
-        font-size: 1.1em;
+        }
     }
 
-    &:active {
-        color: rgba(79, 5, 83, 0.767); 
-        text-decoration: underline;
+    #projectsBody {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-evenly;
     }
-  }
 
-  h3 {
-    margin-top: 2em;
-  }
+    .projectCard {
+        color: $mutednavy;
 
-  #technologiesPage{
-    display: none;
-  }    
+        .projectImage{
+            border-radius: 5px;
+        }
 
-  .skillsList {
-    & p {
-      font-size: 4em;
+        .projectDetails{
+            & p{
+                text-align: justify;
+                margin: 1em;
+                width: 95%;
+            }
+        }
 
-      &:hover{
-        color: $warmtaupe;
-      }
+        & h4 {
+        color: $deepmutedteal;
+        }
     }
-  }
-
-  #projectsBody {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-evenly;
-  }
-
-  .projectCard {
-    background-color: $cardbackground;
-    border: 2px solid $mutednavy;
-    color: $mutednavy;
-
-    & h4 {
-      color: $headerteal;
+        
+    .projectLinks {
+        display: flex;
+        justify-content: space-evenly;
     }
-  }
-    
-  .projectLinks {
-    display: flex;
-    justify-content: space-evenly;
+
   }
 
-  #projectsPage{
-    display: none;
-  }
+  #contactPage{
+    #contactHeader {
+        color: $deepmutedteal;
+        font-size: 3em;
+        font-family: 'Handlee', 'KoHo';
+    }
 
-  .footerLinks{
-    display: flex;
-    font-size: 2em;
-    justify-content: space-evenly;   
+    .footerLinks{
+        font-size: 2em;
+
+        .contactIcons {
+            background-color: $darkmauve;
+            border-radius: 999px;
+            font-size: 1.75em;
+            line-height: 2;
+            margin: .4em auto;
+            height: 2em;
+            width: 2em;
+
+            & a {
+              color: $warmwhite!important;
+            }
+        }
+
+        .contactText{
+            color: $warmtaupe!important;
+            font-size: .75em;
+
+            & a{
+                color: $warmtaupe!important;
+            }
+        }
+    }
+
+    #socialHeader {
+        color: $deepmutedteal;
+        font-size: 2.5em;
+    }
+
+    .socialIcons {
+        color: $darkmauve;
+        border: 2px solid $darkmauve;
+        border-radius: 999px;
+        font-size: 2.5em;
+        line-height: 1.5;
+        height: 1.5em;
+        width: 1.5em;
+    }
   }
 
   .page-footer {
     background-color: $warmtaupe;
+    color: $warmwhite;
 
     & h5 {
       text-align: center;

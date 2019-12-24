@@ -1,0 +1,46 @@
+{
+  "tech1": {
+    "name": "HTML5",
+    "iconUrl": ""
+  },
+  "tech2": {
+    "name": "CSS3",
+    "iconUrl": ""
+  },
+  "tech3": {
+    "name": "Javascript",
+    "iconUrl": ""
+  },
+  "tech4": {
+    "name": "GitHub",
+    "iconUrl": ""
+  },
+  "tech5": {
+    "name": "Sass",
+    "iconUrl": ""
+  },
+  "tech6": {
+    "name": "Bootstrap",
+    "iconUrl": ""
+  },
+  "tech7": {
+    "name": "Git",
+    "iconUrl": ""
+  },
+  "tech8": {
+    "name": "npm",
+    "iconUrl": ""
+  },
+  "tech9": {
+    "name": "jQuery",
+    "iconUrl": ""
+  },
+  "tech10": {
+    "name": "firebase",
+    "iconUrl": ""
+  },
+  "tech11": {
+    "name": "react",
+    "iconUrl": ""
+  }
+}

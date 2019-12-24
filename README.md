@@ -2,12 +2,14 @@
 
 ## Description
 
- Use this application to present my biographical summary, learned technologies, and completeted projects. Information is presented as a single page application, navigable by links at the top of the page. 
+This application was written to present my biographical summary, learned technologies, and completeted projects. Information is presented as a single page application, navigable by links at the top of the page or scroll. 
 
 ## ScreenShots
-![personal site bio](https://raw.githubusercontent.com/aclai4067/personal-bio-site/master/assets/screenshots/personal-bio-site-bio.png)
-![personal site technologies](https://raw.githubusercontent.com/aclai4067/personal-bio-site/master/assets/screenshots/personal-bio-site-technologies.png)
-![personal site projects](https://raw.githubusercontent.com/aclai4067/personal-bio-site/master/assets/screenshots/personal-bio-site-project-cards.png)
+![personal site home](https://raw.githubusercontent.com/aclai4067/personal-bio-site/master/assets/screenshots/personal-site-home.png)
+![personal site bio](https://raw.githubusercontent.com/aclai4067/personal-bio-site/master/assets/screenshots/personal-site-about.png)
+![personal site projects](https://raw.githubusercontent.com/aclai4067/personal-bio-site/master/assets/screenshots/personal-site-projects.png)
+![personal site technologies](https://raw.githubusercontent.com/aclai4067/personal-bio-site/master/assets/screenshots/personal-site-technologies.png)
+![personal site contact](https://raw.githubusercontent.com/aclai4067/personal-bio-site/master/assets/screenshots/personal-site-contact.png)
 
 
 ## Demo

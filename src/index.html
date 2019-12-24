@@ -5,77 +5,116 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Ashley's Personal Bio Site</title>
-    <link href="https://fonts.googleapis.com/css?family=Abel|Gayathri&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Abel|Gayathri|Handlee|KoHo&display=swap" rel="stylesheet">
 </head>
 
 <body>
     <header>
-        <h1 id="homeDefault">Ashley Claiborne's Personal Site</h1>
+        <nav class="myNav navbar navbar-expand-sm navbar-dark bd-navbar p-0">
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul id="navLinks" class="d-flex justify-content-around">
+                    <li><a href=#homeDefault class="navLinks" id="navToHome">Home</a></li>
+                    <li><a href=#bioPage class="navLinks" id="navToBio">About</a></li>
+                    <li><a href=#projectsPage class="navLinks" id="navToProjects">Projects</a></li>
+                    <li><a href=#technologiesPage class="navLinks" id="navToTechnologies">Technologies</a></li>
+                    <li><a href=#contactPage class="navLinks" id="navToContact">Contact</a></li>
+                </ul>
+            </div>
+        </nav>
     </header>
-    <nav>
-        <ul id="navLinks">
-            <li><a href=#bioPage class="navLinks" id="navToBio">Bio</a></li>
-            <li><a href=#technologiesPage class="navLinks" id="navToTechnologies">Technologies</a></li>
-            <li><a href=#projectsPage class="navLinks" id="navToProjects">Projects</a></li>
-        </ul>
-    </nav>
+
 
     <div id="mainDiv" class="pb-4">
+        <div id="homeDefault" class="fullPage text-center">
+            <h1 class="greeting">Hi,<br /> I'm Ashley Claiborne</h1>
+            <p class="mt-5">
+                <span class="descriptor">Software Developer</span>
+                <i class="far fa-sun"></i>
+                <span class="descriptor">Life-long Learner</span>
+                <i class="far fa-sun"></i>
+                <span class="descriptor">Avian Admirer</span>
+            </p>
+            <a href=#bioPage><button class="moreBtn p-2 mt-5">Learn More</button></a>
+        </div>
         <div class="fullPage navToBio" id="bioPage">
             <h3>Career Bio</h3>
-            <p>
-                I graduated with a Bachelor of Fine Arts in Art Education from Georgia State University
-                in December 2008. After a year as a substitute teacher I moved to Nashville and opened 
-                up my job search to look beyond the education field.  Since then I've worked in credential 
-                evaluation and customer service roles.    
-            </p>
-            <p>
-                In school, I was drawn to art, and especially three dimensional mediums, by the collaborative 
-                nature of the field, the desire to build, and the satisfaction of figuring out how to turn 
-                an abstract idea into a physical object that works within the limitations of the medium and 
-                the laws of physics. In my career, I found my strengths in communication, problem solving, 
-                and research. 
-            </p>
-            <p>
-                In August 2019, I began exploring a career in software developement at Nashville Software School (NSS) 
-                by enrolling in their year-long Full Stack Web Development Bootcamp. While at NSS I have found 
-                just how much coding plays to my strenths and the type of tasks that give me satisfaction in my work. 
-                It requires the creative problem solving that I found to be my strength both in school and 
-                my career.  I've enjoyed working within a team and community that fosters improvement through 
-                collabortation. My research background has helped me in finding solutions when I'm stuck in my code.  
-                And I see virtually endless opportunity for continuous education and growth in thie field.
-            </p>
-        </div>
-        <div class="fullPage navToTechnologies" id="technologiesPage">
-            <h3>Skills and Technologies</h3>
-            <div class="row d-flex flex-wrap justify-content-around skillsList">
-                <p class="col-sm-1 col-4"><i class="fab fa-html5"></i></p>
-                <p class="col-sm-1 col-4"><i class="fab fa-css3-alt"></i></p>
-                <p class="col-sm-1 col-4"><i class="fab fa-js-square"></i></p>
-                <p class="col-sm-1 col-4"><i class="fab fa-github-square"></i></p>
-                <p class="col-sm-1 col-4"><i class="fab fa-sass"></i></p>
-                <p class="col-sm-1 col-4"><i class="fab fa-bootstrap"></i></p>
-                <p class="col-sm-1 col-4"><i class="fab fa-git-alt"></i></p>
-                <p class="col-sm-1 col-4"><i class="fab fa-npm"></i></p>
+            <img id="headshot" src="https://avatars0.githubusercontent.com/u/47763728?s=460&v=4" />
+            <div id="aboutText">
+                <p>
+                    I graduated with a Bachelor of Fine Arts in Art Education from Georgia State University
+                    in December 2008. After a year as a substitute teacher I moved to Nashville and opened 
+                    up my job search to look beyond the education field.  Since then I've worked in credential 
+                    evaluation and customer service roles.    
+                </p>
+                <p>
+                    In school, I was drawn to art, and especially three dimensional mediums, by the collaborative 
+                    nature of the field, the desire to build, and the satisfaction of figuring out how to turn 
+                    an abstract idea into a physical object that works within the limitations of the medium and 
+                    the laws of physics. In my career, I found my strengths in communication, problem solving, 
+                    and research. 
+                </p>
+                <p>
+                    In August 2019, I began exploring a career in software developement at Nashville Software School (NSS) 
+                    by enrolling in their year-long Full Stack Web Development Bootcamp. While at NSS I have found 
+                    just how much coding plays to my strenths and the type of tasks that give me satisfaction in my work. 
+                    It requires the creative problem solving that I found to be my strength both in school and 
+                    my career.  I've enjoyed working within a team and community that fosters improvement through 
+                    collabortation. My research background has helped me in finding solutions when I'm stuck in my code.  
+                    And I see virtually endless opportunity for continuous education and growth in thie field.
+                </p>
             </div>
+            <div class="clearfix"></div>
         </div>
         <div class="fullPage navToProjects" id="projectsPage">
             <h3>Projects</h3>
             <div id="projectsBody" class="row d-flex flex-wrap justify-content-around">
 
             </div>
-
+        </div>
+        <div class="fullPage navToTechnologies" id="technologiesPage">
+                <h3>Skills and Technologies</h3>
+                <div class="d-flex flex-wrap text-center skillsList">
+                    <p class="col-sm-3 col-4 mt-5 text-center"><i class="devicon-html5-plain-wordmark"></i></p>
+                    <p class="col-sm-3 col-4 mt-5"><i class="devicon-css3-plain-wordmark"></i></p>
+                    <p class="col-sm-3 col-4 mt-5"><i class="fab fa-js-square"></i></p>
+                    <p class="col-sm-3 col-4 mt-5"><i class="fab fa-github-square"></i></p>
+                    <p class="col-sm-3 col-4 mt-5"><i class="fab fa-sass"></i></p>
+                    <p class="col-sm-3 col-4 mt-5"><i class="fab fa-bootstrap"></i></p>
+                    <p class="col-sm-3 col-4 mt-5"><i class="devicon-git-plain-wordmark"></i></p>
+                    <p class="col-sm-3 col-4 mt-5"><i class="fab fa-npm"></i></p>
+                </div>
+            </div>
+        <div class="fullPage" id="contactPage">
+            <h5 id="contactHeader" class="text-center p-5">Contact Me</h5>
+            <div class="footerLinks text-center row d-flex pt-3">
+                <div class="col-md-4">
+                    <div class="contactIcons"><a href="https://goo.gl/maps/w8D9FHw1N8C7NcBV7" title="located in Nashville"><i class="fas fa-map-marker-alt"></i></a></div>
+                    <p class="contactText">Nashville, TN</p>
+                </div>
+                <div class="col-md-4">
+                    <div class="contactIcons"><a href="mailto:languageisaliquid@gmail.com" title="email Ashley"><i class="far fa-paper-plane"></i></a></div>
+                    <p class="contactText"><a href="mailto:languageisaliquid@gmail.com" title="email Ashley">languageisaliquid@gmail.com</a></p>
+                </div>
+                <div class="col-md-4">
+                    <div class="contactIcons"><a href="tel:1-678-464-1635" title="call Ashley"><i class="fas fa-mobile-alt"></i></a></div>
+                    <p class="contactText">678-464-1635</p>
+                </div>
+            </div>
+            <div class="text-center">
+                <h6 id="socialHeader" class="mt-5">Social</h6>
+                <div class="row d-flex justify-content-center">
+                    <a class="socialIcons m-5" href="https://www.linkedin.com/in/ashley-claiborne-a14b2219" title="linkedin"><i class="fab fa-linkedin-in"></i></a>
+                    <a class="socialIcons m-5" href="https://github.com/aclai4067" title="github"><i class="fab fa-github"></i></a>
+                </div>
+            </div>
         </div>
     </div>
 
     <footer class="page-footer fixed-bottom">
-        <h5>Contact</h5>
-        <div class="footerLinks">
-            <a href="mailto:languageisaliquid@gmail.com" title="email Ashley"><i class="far fa-paper-plane"></i></i></a>
-            <a href="https://www.linkedin.com/in/ashley-claiborne-a14b2219" title="linkedin"><i class="fab fa-linkedin-in"></i></a>
-            <a href="https://github.com/aclai4067" title="github"><i class="fab fa-github"></i></a>
-            <a href="https://codepen.io/aclai4067" title="codepen"><i class="fab fa-codepen"></i></a>
-        </div>
+        <p class="m-0">copyright or something</p>
     </footer>
 </body>
 </html>

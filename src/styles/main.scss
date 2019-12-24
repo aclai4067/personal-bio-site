@@ -29,10 +29,16 @@ body {
 
                 a{
                     color: $warmwhite!important;
+                    text-decoration: none;
 
                     &:hover{
-                    color: $darkmauve!important;
-                    text-decoration: none!important;
+                        font-size: 1.1em;
+                        color: $darkmauve!important;
+                        text-decoration: none!important;
+                    }
+
+                    &:active {
+                        text-decoration: underline;
                     }
                 }   
             }
@@ -112,20 +118,6 @@ body {
         }
     }
 
-    a {
-        color: $warmtaupe;
-        text-decoration: none;
-
-        &:hover {
-            font-size: 1.1em;
-        }
-
-        &:active {
-            color: rgba(79, 5, 83, 0.767); 
-            text-decoration: underline;
-        }
-    }
-
     .skillsList {
         & p {
         font-size: 4em;
@@ -169,10 +161,54 @@ body {
 
   }
 
-  .footerLinks{
-    display: flex;
-    font-size: 2em;
-    justify-content: space-evenly;   
+  #contactPage{
+    #contactHeader {
+        color: $deepmutedteal;
+        font-size: 3em;
+        font-family: 'Handlee', 'KoHo';
+    }
+
+    .footerLinks{
+        font-size: 2em;
+
+        .contactIcons {
+            background-color: $darkmauve;
+            border-radius: 999px;
+            font-size: 1.75em;
+            line-height: 2;
+            margin: .4em auto;
+            height: 2em;
+            width: 2em;
+
+            & a {
+              color: $warmwhite!important;
+            }
+        }
+
+        .contactText{
+            color: $warmtaupe!important;
+            font-size: .75em;
+
+            & a{
+                color: $warmtaupe!important;
+            }
+        }
+    }
+
+    #socialHeader {
+        color: $deepmutedteal;
+        font-size: 2.5em;
+    }
+
+    .socialIcons {
+        color: $darkmauve;
+        border: 2px solid $darkmauve;
+        border-radius: 999px;
+        font-size: 2.5em;
+        line-height: 1.5;
+        height: 1.5em;
+        width: 1.5em;
+    }
   }
 
   .page-footer {

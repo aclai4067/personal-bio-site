@@ -1,46 +1,46 @@
 {
   "tech1": {
     "name": "HTML5",
-    "iconUrl": ""
+    "iconUrl": "<i class='devicon-html5-plain-wordmark'></i>"
   },
   "tech2": {
     "name": "CSS3",
-    "iconUrl": ""
+    "iconUrl": "<i class='devicon-css3-plain-wordmark'></i>"
   },
   "tech3": {
     "name": "Javascript",
-    "iconUrl": ""
+    "iconUrl": "<i class='fab fa-js-square'></i>"
   },
   "tech4": {
     "name": "GitHub",
-    "iconUrl": ""
+    "iconUrl": "<i class='devicon-github-plain-wordmark'></i>"
   },
   "tech5": {
     "name": "Sass",
-    "iconUrl": ""
+    "iconUrl": "<i class='fab fa-sass'></i>"
   },
   "tech6": {
     "name": "Bootstrap",
-    "iconUrl": ""
+    "iconUrl": "<i class='fab fa-bootstrap'></i>"
   },
   "tech7": {
     "name": "Git",
-    "iconUrl": ""
+    "iconUrl": "<i class='devicon-git-plain-wordmark'></i>"
   },
   "tech8": {
     "name": "npm",
-    "iconUrl": ""
+    "iconUrl": "<i class='fab fa-npm'></i>"
   },
   "tech9": {
     "name": "jQuery",
-    "iconUrl": ""
+    "iconUrl": "<i class='devicon-jquery-plain-wordmark'></i>"
   },
   "tech10": {
-    "name": "firebase",
-    "iconUrl": ""
+    "name": "webpack",
+    "iconUrl": "<i class='devicon-webpack-plain'></i>"
   },
   "tech11": {
     "name": "react",
-    "iconUrl": ""
+    "iconUrl": "<i class='devicon-react-original-wordmark'></i>"
   }
 }

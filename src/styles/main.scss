@@ -2,16 +2,15 @@
 @import './variables';
 @import '~devicon/devicon.min.css';
 
+
 body {
   background: radial-gradient($transparentwarmwhite, $pardonPink) no-repeat center center fixed,
     $warmtaupe url("https://images.unsplash.com/photo-1563225409-127c18758bd5?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1534&q=80") no-repeat center center fixed;
   background-size: cover;
-  height: 100%;
   margin: 0;
-  padding: 0;
   color: $warmtaupe;
   font-family: 'Abel', 'Gayathri', sans-serif;
-
+  width: 100%;
 
     .myNav {
         background-color: $warmtaupe!important;
@@ -45,7 +44,9 @@ body {
         }
     }
 
-    #mainDiv {    
+    #mainDiv {   
+        margin-right: 0;
+
     & .fullPage{
         padding-top: 2.3rem;
         min-height: 100vh;
@@ -90,16 +91,15 @@ body {
         $warmtaupe url("https://images.unsplash.com/photo-1447703693928-9cd89c8d3ac5?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=751&q=80") no-repeat center center fixed;
     background-size: cover;
     color: $warmwhite;
-    height: 100%;
     margin: 0;
     padding: 2.3rem 0 0 0;
+    min-width: 103vw;
 
         #headshot {
             border: 5px solid $deepmutedteal;
             border-radius: 15px;
             float: left;
-            margin: 1em;
-            max-width: 400px;
+            padding: 0;
         }
 
         #aboutText {
@@ -108,7 +108,7 @@ body {
             & p {
                 text-align: justify;
                 margin: 1em;
-                width: 95%;
+                width: 90%;
             }
         }
 
@@ -117,48 +117,6 @@ body {
             clear: both;
         }
     }
-
-    .skillsList {
-        & p {
-        font-size: 4em;
-
-        &:hover{
-            color: $darkmauve;
-        }
-        }
-    }
-
-    #projectsBody {
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: space-evenly;
-    }
-
-    .projectCard {
-        color: $mutednavy;
-
-        .projectImage{
-            border-radius: 5px;
-        }
-
-        .projectDetails{
-            & p{
-                text-align: justify;
-                margin: 1em;
-                width: 95%;
-            }
-        }
-
-        & h4 {
-        color: $deepmutedteal;
-        }
-    }
-        
-    .projectLinks {
-        display: flex;
-        justify-content: space-evenly;
-    }
-
   }
 
   #contactPage{
@@ -225,4 +183,10 @@ body {
       }
     }
   }
+}
+
+@media screen and (max-width: 900px) {
+    #bioPage, #technologiesPage {
+        width: 110vw;
+    }
 }

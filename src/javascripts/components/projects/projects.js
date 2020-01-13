@@ -1,6 +1,7 @@
 import $ from 'jquery';
 import utilities from '../../helpers/utilities';
 import projectData from '../../helpers/data/projectData';
+import './projects.scss';
 
 const createProjectCards = () => {
   let cardsToPrint = '';

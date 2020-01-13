@@ -1,0 +1,22 @@
+@import '../../../styles/variables';
+
+.skillsList {
+  .techIcon{
+      font-size: 4em;
+
+      &:hover{
+          color: $darkmauve;
+
+          path{
+              fill: $darkmauve;
+              &.dontFill{
+                  fill: transparent;
+              }
+          }
+      } 
+
+      .firebaseIcon{
+          max-height: 64px;
+      }
+  }
+}

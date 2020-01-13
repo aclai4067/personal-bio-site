@@ -1,0 +1,32 @@
+@import '../../../styles/variables';
+
+#projectsBody {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+}
+
+.projectCard {
+  color: $mutednavy;
+
+  .projectImage{
+      border-radius: 5px;
+  }
+
+  .projectDetails{
+      & p{
+          text-align: justify;
+          margin: 1em;
+          width: 95%;
+      }
+  }
+
+  & h4 {
+  color: $deepmutedteal;
+  }
+}
+  
+.projectLinks {
+  display: flex;
+  justify-content: space-evenly;
+}

@@ -5,14 +5,14 @@
       "description": "This was a group project to create a website for the punk rock band, Pardon Us. I contributed the background image with parallox scrolling on all pages except home.  I also contributed the music page with a card printing function and animation to hide and display additional content.",
       "technologiesUsed": "HTML, CSS, Vanilla JavaScript, Version Control with Github",
       "available": false,
-      "url": "https://github.com/nss-evening-cohort-8/js-part-deux", 
+      "url": "", 
       "githubUrl": "https://github.com/nss-evening-cohort-10/foundations-group-project-pardon-us"
     },
     "project2": {
       "title": "Squidterest", 
       "screenshot": "https://raw.githubusercontent.com/aclai4067/pinterest/master/screenshots/squidterest_logged_in.png", 
       "description": "Squidterest is a Pinterest-inspired application that allows users to save images and links to items they are interested in, and sort them by topic on various boards. This project uses full CRUD, with axios calls to a firebase database. Users must sign in with google to utilize this app.", 
-      "technologiesUsed": "HTML, CSS, JavaScript, Version Control with Github, Bootstrap, jQuery, Firebase",
+      "technologiesUsed": "HTML, CSS, JavaScript, Version Control with Github, Bootstrap, jQuery, Webpack, Firebase",
       "available": true,
       "url": "https://squidterest.firebaseapp.com/#",
       "githubUrl": "https://github.com/aclai4067/pinterest"
@@ -20,19 +20,28 @@
     "project3": {
       "title": "Le Baguette", 
       "screenshot": "https://raw.githubusercontent.com/nss-evening-cohort-10/nutshell-michelin-restaurant/master/screenshots/homeView.png", 
-      "description": "This was a group project to create a website for a fictionalized high end fusion restaurant. Users must sign in with google to create, edit, or delete content from the database, but may view the site without sign in. I was in the first of two groups to work on this project and contributed the menu page with full CRUD and filter functionality.", 
-      "technologiesUsed": "HTML, CSS, JavaScript, Version Control with Github, Bootstrap, jQuery, Firebase",
+      "description": "This was a group project to create a website for a fictionalized high-end fusion restaurant. Users must sign in with google to create, edit, or delete content from the database, but may view the site without sign in. I was in the first of two groups to work on this project and contributed the menu page with full CRUD and filter functionality.", 
+      "technologiesUsed": "HTML, CSS, JavaScript, Version Control with Github, Bootstrap, jQuery, Webpack, Firebase",
       "available": true,
       "url": "https://labaguette-932fa.firebaseapp.com/#", 
-      "githubUrl": "https://github.com/nss-evening-cohort-10/nutshell-michelin-restaurant"
+      "githubUrl": "https://github.com/aclai4067/nutshell-michelin-restaurant"
     },
     "project4": {
       "title": "Jurrasic World", 
       "screenshot": "https://raw.githubusercontent.com/nss-evening-cohort-10/nutshell-jurassic-world/master/images/readmeImg/homepageUpdate.png", 
       "description": "This was a group project to create a website for users to track all the different components that run the theme park. This project uses full CRUD, with axios calls to a firebase database. Users must sign in with google to create, edit, or delete content from the database, but may view the site without sign in. I was in the second of two groups to work on this project.  I provided updates to the equipment page that allow equipment to be assigned to specific staff members, removes assignments when the equipment is broken, and filters by assignment.  I also contributed the read aspects of both the shift and calendar views of the Schedule page.", 
-      "technologiesUsed": "HTML, CSS, JavaScript, Version Control with Github, Bootstrap, jQuery, Firebase",
+      "technologiesUsed": "HTML, CSS, JavaScript, Version Control with Github, Bootstrap, jQuery, Webpack, Firebase",
       "available": true,
       "url": "https://jurassic-park-26ffa.firebaseapp.com/#", 
-      "githubUrl": "https://github.com/nss-evening-cohort-10/nutshell-jurassic-world"
+      "githubUrl": "https://github.com/aclai4067/nutshell-jurassic-world"
+    },
+    "project5": {
+      "title": "Doggie Day Care", 
+      "screenshot": "https://raw.githubusercontent.com/aclai4067/doggie-day-care/master/screenshots/doggie-day-care-schedule-011220.png", 
+      "description": "This application was created with React. It allows the user to view, edit, add or remove dog walking services scheduled through the Doggie Day Care. The user can also view basic information on all dogs and staff. The user must log in with Google to see the app content.", 
+      "technologiesUsed": "HTML, SCSS, JavaScript, Version Control with Github, Bootstrap, Webpack, Firebase, React",
+      "available": true,
+      "url": "https://doggie-day-care-481cd.firebaseapp.com/#", 
+      "githubUrl": "https://github.com/aclai4067/doggie-day-care"
     }
 }

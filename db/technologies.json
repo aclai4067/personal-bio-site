@@ -52,15 +52,7 @@
     "icon": "<i class='devicon-csharp-plain-wordmark'></i>"
   },
   "tech14": {
-    "name": "react",
-    "icon": "<i class='devicon-react-original-wordmark'></i>"
-  },
-  "tech15": {
     "name": "Visual Studio",
     "icon": "<i class='devicon-visualstudio-plain'></i>"
-  },
-  "tech16": {
-    "name": "react",
-    "icon": "<i class='devicon-react-original-wordmark'></i>"
   }
 }

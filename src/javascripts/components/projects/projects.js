@@ -19,7 +19,7 @@ const createProjectCards = () => {
               <h6>Technologies:</h6>
               <p>${projectObj.technologiesUsed}</p>
               <footer class="card-footer projectLinks">
-                <a href=${projectObj.url} target="_blank">URL</a>
+                <a href=${projectObj.url} target="_blank">Check it out!</a>
                 <a href=${projectObj.githubUrl} target="_blank">GitHub Repo</a>
               </footer>
             </div>
